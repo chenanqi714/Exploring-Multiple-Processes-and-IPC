@@ -1,0 +1,100 @@
+1     // load 10
+10
+7     // store in memory[100]
+100
+1     // load 0
+0
+16    // copy to Y
+8     // get random number
+9     // print random number
+1
+11    // Add Y
+16    // copy to Y
+1     // load 1     
+1      
+27    // push to stack
+23    // call space
+51
+2     // load from memory[100]
+100   
+14    // copy to X
+26    // decrement X by 1
+15    // copy from X
+7     // store in memory
+100
+22
+7     // jump back to 8(get random number) only if AC is 0
+23    // call new line
+65
+29    // system call
+1     // print 'S'
+83
+9
+2
+1     // print 'u'
+117
+9
+2
+1     // print 'm'
+109
+9
+2
+1     // print '='
+61
+9
+2
+17    // copy from Y (sum)
+9     // print sum
+1
+23    // call new line
+65
+50     // exit
+1    ld 1    // print space 
+1 
+14   CopyToX
+6    LoadSpX  - get parm
+14   CopyToX
+1    ld ' ' 
+32
+9    output
+2
+26   decX
+15   CopyFromX
+22   JNE 53
+53
+24     
+1    // print newline
+10
+9
+2
+24
+1    ld 1     // print dash
+1 
+14   CopyToX
+6    LoadSpX  - get parm
+14   CopyToX
+1    ld -
+45
+9    output
+2
+26   decX
+15   CopyFromX
+22   JNE 75
+75
+24
+
+
+.1000
+30   interrupt handler - just return
+
+.1500
+1    // load 10
+30
+27   // push
+23   // call dash
+70 
+23   // call newline
+65
+30
+
+
